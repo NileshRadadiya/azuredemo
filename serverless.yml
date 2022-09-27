@@ -73,21 +73,6 @@ package:
     # - include-me-dir/**
 
 functions:
-  hello:
-    handler: src/handlers/hello.sayHello
-    events:
-      - http: true
-        methods:
-          - GET
-        authLevel: anonymous # can also be `function` or `admin`
-
-  goodbye:
-    handler: src/handlers/goodbye.sayGoodbye
-    events:
-      - http: true
-        methods:
-          - GET
-        authLevel: anonymous
   login:
     handler: src/handlers/authentication.login
     events: 
